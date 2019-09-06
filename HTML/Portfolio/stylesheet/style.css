@@ -4,6 +4,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
   li {
@@ -29,6 +32,11 @@ ul {
   body {
       margin: 0;
       height: 0;
+  }
+
+  #container {
+    margin-top: 75px;
+    margin-left: 8px;
   }
 
  
