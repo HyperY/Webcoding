@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(red, green, blue, alpha);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  margin: 25px, 50px, 25px;
+}
+
+ul {
+    align-content: center;
+}
+
+footer {
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}

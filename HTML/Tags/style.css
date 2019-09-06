@@ -1,0 +1,21 @@
+.bold {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.pullquote {
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+}
+
+.important {
+    font-weight: bolder;
+}
+
+.span {
+    font-weight: bolder;
+}

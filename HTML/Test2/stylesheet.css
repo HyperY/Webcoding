@@ -1,0 +1,62 @@
+header {
+    position: top;
+    height: 100px;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: lightblue;
+    text-align: center;
+    image-orientation: initial;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Verdana;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    margin: 25px, 50px, 25px;
+  }
+  
+  .wrapper {
+      min-height: 100%;
+      margin: 0;
+      margin-bottom: -50px;
+  }
+
+  .footer,
+  .push {
+      height: 50px;
+  }
+
+  img {
+      width: 500px;
+      height: auto;
+      border: 5px red;
+  }
+
+  .rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+  footer {
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
