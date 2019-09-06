@@ -12,6 +12,9 @@ body {
     background-color: lightblue;
     text-align: center;
     image-orientation: initial;
+    width: 100%;
+    height: 100%;
+    margin: 000;
   }
   
   h1 {
