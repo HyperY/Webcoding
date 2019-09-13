@@ -1,67 +1,51 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: grey;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
- .active {
-      background-color: lightgray;
-  }
-  
-  body {
-      margin: 0;
-      height: 0;
-  }
+li {
+  float: left;
+}
 
-  #container {
-    margin-top: 75px;
-    margin-left: 18px;
-    text-align: center;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
 
-  #fb {
-    height: 50px;
-    width: 50px;
-  }
+li a:hover:not(.active) {
+  background-color: grey;
+}
 
-  #tt {
-    height: 50px;
-    width: 50px;
-  }
+.active {
+  background-color: lightgray;
+}
 
-  #twitch {
-    height: 50px;
-    width: 50px;
-  }
+body {
+  margin: 0;
+  height: 0;
+}
 
-  #mail {
-    height: 50px;
-    width: 50px;
-  }
+#container {
+  margin: 75px 18px;
+  text-align: center;
+}
 
-  #meg {
-    height: 444px;
-    width: 250px;
-    text-align: left;
-  }
+#fb, #tt, #twitch, #mail {
+  height: 50px;
+  width: 50px;
+}
+
+#meg {
+  height: 444px;
+  width: 250px;
+  text-align: left;
+}
