@@ -1,4 +1,4 @@
-ul {
+#nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,11 +9,11 @@ ul {
   width: 100%;
 }
 
-li {
+#nav>li {
   float: left;
 }
 
-li a {
+#nav>li a {
   display: block;
   color: white;
   text-align: center;
@@ -39,7 +39,53 @@ body {
   text-align: center;
 }
 
-#fb, #tt, #twitch, #mail {
+.card {
+  background-color: lightgray;
+  border: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 7px 7px 10px 3px darkgrey;
+}
+
+.card>div.left,
+.card>div.right,
+.hobby>div.hleft,
+.hobby>div.hright,
+.music>div.mright,
+.music>div.mleft {
+  width: 100%;
+  width: 45%;
+  display: inline-block;
+}
+
+.card>div {
+  vertical-align: middle;
+}
+
+.hobby,
+.music {
+  background-color: lightgray;
+  border: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 7px 7px 10px 3px darkgrey;
+}
+
+
+
+#video {
+  width: 320px;
+  height: 240px;
+}
+
+#fb,
+#tt,
+#twitch,
+#mail {
   height: 50px;
   width: 50px;
 }
@@ -48,4 +94,13 @@ body {
   height: 444px;
   width: 250px;
   text-align: left;
+}
+
+#rammstein {
+  height: 250px;
+  width: 444px;
+}
+
+.copyright {
+  margin: 8px;
 }
