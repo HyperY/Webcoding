@@ -1,7 +1,7 @@
 #nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px 10%;
   overflow: hidden;
   background-color: #333333;
   position: fixed;
@@ -14,7 +14,7 @@
 }
 
 #nav>li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 16px;
@@ -54,7 +54,11 @@ body {
 .hobby>div.hleft,
 .hobby>div.hright,
 .music>div.mright,
-.music>div.mleft {
+.music>div.mleft,
+.resume>div.rleft,
+.resume>div.rright,
+.resume>div.lleft,
+.resume>div.lright {
   width: 100%;
   width: 45%;
   display: inline-block;
@@ -75,7 +79,20 @@ body {
   box-shadow: 7px 7px 10px 3px darkgrey;
 }
 
+.resume {
+  text-align: left;
+  border: 10px;
+  width: 100%;
+}
 
+.resume>div.rright,
+.resume>div.lright {
+  vertical-align: top;
+}
+
+#upper {
+  text-transform: uppercase;
+}
 
 #video {
   width: 320px;
