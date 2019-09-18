@@ -33,7 +33,11 @@
 			text-align: right;
 		}
 
-		.plant-box img,
+		.plant-box img {
+			display: none;
+		}
+
+
 		.plant-box p {
 			display: block;
 			margin: auto;
@@ -41,10 +45,11 @@
 		}
 
 		.plant-box {
+			text-align: center;
 			box-shadow: 5px 5px 5px 4px #777777;
 			padding: 5%;
 			margin: 20px;
-			background-image: linear-gradient(#F7FFF5, rgb(6, 17, 10));
+			background-image: linear-gradient(#F7FFF5, #C2E7CD);
 		}
 
 		h1 {
@@ -55,6 +60,14 @@
 		.plant-box:hover {
 			box-shadow: 10px 10px 5px 2px #af9e9e;
 			background-image: linear-gradient(#f1ebeb, #e1cfcf);
+		}
+
+		.plant-box:hover img {
+			display: block;
+		}
+
+		.plant-box:hover p {
+			display: none;
 		}
 	</style>
 </head>
