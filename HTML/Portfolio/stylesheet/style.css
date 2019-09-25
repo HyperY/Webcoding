@@ -158,6 +158,10 @@ body {
   max-height: 100%;
 }
 
+#strong {
+  font-weight: bold;
+}
+
 .copyright {
   margin: 8px;
   font-style: italic;
