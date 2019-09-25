@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 #nav>li {
@@ -32,6 +33,7 @@ li a:hover:not(.active) {
 body {
   margin: 0;
   height: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #container {
@@ -88,6 +90,18 @@ body {
 .resume>div.rright,
 .resume>div.lright {
   vertical-align: top;
+}
+
+.work-box {
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px grey;
+  padding: 5%;
+  margin: 10px 0;
+}
+
+.work-box iframe {
+  width: 560px;
+  height: 315px;
 }
 
 #upper {
