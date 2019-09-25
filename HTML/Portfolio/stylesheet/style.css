@@ -8,6 +8,7 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #nav>li {
@@ -27,7 +28,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: lightgray;
+  background-color: darkgrey;
 }
 
 body {
@@ -93,15 +94,37 @@ body {
 }
 
 .work-box {
-  text-align: center;
+  
   box-shadow: 5px 5px 5px 5px grey;
-  padding: 5%;
-  margin: 10px 0;
+  padding: 2%;
+  margin: auto;
+  height: 350px;
+  width: 50%;
 }
 
 .work-box iframe {
   width: 560px;
   height: 315px;
+}
+
+.work-box figure {
+  max-width: 100%;
+  display: none;
+  margin: 0 auto;
+}
+
+.work-box:hover figure {
+  display: block;
+}
+
+.work-box:hover p {
+  display: none;
+}
+
+#container>a {
+  display: block;
+  text-align: left;
+  margin: 2%;
 }
 
 #upper {
@@ -131,8 +154,11 @@ body {
 #rammstein {
   height: 250px;
   width: 444px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .copyright {
   margin: 8px;
+  font-style: italic;
 }
