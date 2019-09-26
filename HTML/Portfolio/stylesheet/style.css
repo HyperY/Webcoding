@@ -1,3 +1,35 @@
+/* Global rules */
+body {
+  margin: 0;
+  height: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+  margin: 75px 18px;
+  text-align: center;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.copyright {
+  margin: 8px;
+  font-style: italic;
+}
+
+#upper {
+  text-transform: uppercase;
+}
+
+.copyright>a {
+  margin: 2%;
+  display: inline;
+  text-decoration: none;
+}
+
+/* Nav bar */
 #nav {
   list-style-type: none;
   margin: 0px;
@@ -31,17 +63,9 @@ li a:hover:not(.active) {
   background-color: darkgrey;
 }
 
-body {
-  margin: 0;
-  height: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* Nav bar end */
 
-#container {
-  margin: 75px 18px;
-  text-align: center;
-}
-
+/* Homepage start */
 .card {
   background-color: lightgray;
   border: 10px;
@@ -82,6 +106,30 @@ body {
   box-shadow: 7px 7px 10px 3px darkgrey;
 }
 
+#meg {
+  height: 444px;
+  width: 250px;
+  text-align: left;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#rammstein {
+  height: 250px;
+  width: 444px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#video {
+  width: 320px;
+  height: 240px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Homepage end, Resume page start */
+
 .resume {
   text-align: left;
   border: 10px;
@@ -93,8 +141,10 @@ body {
   vertical-align: top;
 }
 
+/* Resume page end, Portfolio page start */
+
 .work-box {
-  
+
   box-shadow: 5px 5px 5px 5px grey;
   padding: 2%;
   margin: auto;
@@ -127,22 +177,7 @@ body {
   max-width: 75%;
 }
 
-#container>a {
-  display: block;
-  text-align: left;
-  margin: 2%;
-}
-
-#upper {
-  text-transform: uppercase;
-}
-
-#video {
-  width: 320px;
-  height: 240px;
-  max-width: 100%;
-  max-height: 100%;
-}
+/* Portfolio page end, Contact page start */
 
 #fb,
 #tt,
@@ -153,26 +188,4 @@ body {
   width: 50px;
 }
 
-#meg {
-  height: 444px;
-  width: 250px;
-  text-align: left;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#rammstein {
-  height: 250px;
-  width: 444px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.strong {
-  font-weight: bold;
-}
-
-.copyright {
-  margin: 8px;
-  font-style: italic;
-}
+/* Contact page end, end of document */
