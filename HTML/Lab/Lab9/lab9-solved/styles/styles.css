@@ -1,0 +1,66 @@
+/* This part of the CSS is to show you how to use the
+Custom properties (--*): CSS variables
+https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+
+WARNING: when validating this code, the CSS validator will raise an error. The code is VALID 
+and the problem is a known issue of the validator itself.
+*/
+:root {
+    --main-color: #5d0077;
+    --bg-color: #4e4544;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee;
+    color: var(--bg-color);
+    font: normal 16px sans-serif;
+}
+
+header button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 8px 25px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+footer {
+    color: var(--main-color);
+    padding: 20px 0;
+}
+
+footer p {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.container {  
+    padding: 0 60px;
+}
+
+header {
+    color: var(--main-color);
+    padding: 20px 0;
+}
+
+.sidebar {
+    border: 1px solid #a2a2a2;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    
+}

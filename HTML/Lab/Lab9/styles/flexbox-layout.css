@@ -1,0 +1,20 @@
+/* 
+Use this file to implement all the CSS rules needed to create the CSS flexbox layout.
+Notice that this file has to be attached to the page right after the styles.css.
+This means that this set of CSS rules will override some of the rules of the previous css file.
+
+Your html file will look like:
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flexbox-layout.css">
+*/
+
+/* CSS RULES FOR LARGE SCREEN HERE */
+
+/* end CSS RULES FOR LARGE SCREEN HERE */
+
+/* CSS RULES OVERRIDING THE LAYOUT FOR SMALL SCREENS */
+@media (max-width: 600px) {
+    
+}
+/* end CSS RULES OVERRIDING THE LAYOUT FOR SMALL SCREENS */
+
