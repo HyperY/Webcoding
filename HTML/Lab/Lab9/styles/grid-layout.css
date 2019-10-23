@@ -9,23 +9,22 @@ Your html file will look like:
 */
 
 /* CSS RULES FOR LARGE SCREEN HERE */
-
 .container {
     max-width: 900px;
-    background-color: white;
+    background-color: #fff;
     margin: 0 auto;
 
     display: grid;
-    grid-template-areas: "header header"
-        "main side"
-        "footer footer";
+    grid-template-areas:
+    "header header"
+    "main side"
+    "footer footer";
     grid-template-columns: 3fr 1fr;
     grid-gap: 60px;
 }
 
 header {
     grid-area: header;
-    
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -41,14 +40,15 @@ header nav a {
 
 .main {
     grid-area: main;
+    display: grid;
     text-align: center;
 }
 
-.main * {
+.main>* {
     margin: 1em 0;
 }
 
-.main p {
+.main p{
     text-align: justify;
 }
 
@@ -68,6 +68,16 @@ footer {
 /* end CSS RULES FOR LARGE SCREEN HERE */
 
 /* CSS RULES OVERRIDING THE LAYOUT FOR SMALL SCREENS */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "main"
+        "side"
+        "footer";
+        grid-template-columns: 1fr;
+        padding: 0 2em;
+    }
+}
 
 /* end CSS RULES OVERRIDING THE LAYOUT FOR SMALL SCREENS */
