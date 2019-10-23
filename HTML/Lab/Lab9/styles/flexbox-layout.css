@@ -9,7 +9,13 @@ Your html file will look like:
 */
 
 /* CSS RULES FOR LARGE SCREEN HERE */
-
+.container {
+    max-width: 900px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    
+}
 /* end CSS RULES FOR LARGE SCREEN HERE */
 
 /* CSS RULES OVERRIDING THE LAYOUT FOR SMALL SCREENS */

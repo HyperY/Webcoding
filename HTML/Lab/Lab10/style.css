@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+body>p {
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row .box {
+    margin: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box19 {
+    transition-property: background-color-animation;
+    animation: background-color-animation 5s infinite alternate;
+}
+
+#box20 {
+    transition-property: rotation-animation;
+    animation: rotation-animation 5s infinite alternate;
+}
+
+#box21 {
+    transition-property: translate-animation;
+    animation: translate-animation 5s infinite alternate;
+}
+
+#box22 {
+    animation: background-color-animation 5s infinite alternate, 
+    rotation-animation 5s infinite alternate, 
+    translate-animation 5s infinite alternate;
+}
+
+#box23 {
+    transition-property: translate-rotate-animation;
+    animation: translate-rotate-animation 5s infinite alternate, 
+    background-color-animation 5s infinite alternate;
+}
+
+#box24 {
+    transition-property: translate-rotate360-animation;
+    animation: translate-rotate360-animation 5s infinite alternate,
+    background-color-animation 5s infinite alternate;
+}
+
+@keyframes background-color-animation {
+    0% {background-color: red;}
+    20% {background-color: orange;}
+    40% {background-color: yellow;}
+    60% {background-color: green;}
+    80% {background-color: blue;}
+    100% {background-color: purple;}
+}
+
+@keyframes rotation-animation {
+    50% {transform: rotate(-90deg);}
+    100% {transform: rotate(0deg)};
+}
+
+@keyframes translate-animation {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(125px, 0);}
+    50% {transform: translate(125px, 125px);}
+    75% {transform: translate(0, 125px);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes translate-rotate-animation {
+    0% {transform: translate(0,0) rotate(0);}
+    25% {transform: translate(125px,0) rotate(-22.5deg);}
+    50% {transform: translate(125px, 125px) rotate(-45deg);}
+    75% {transform: translate(0, 125px) rotate(-67.5deg);}
+    100% {transform: translate(0,0) rotate(-90deg);}
+}
+
+@keyframes translate-rotate360-animation {
+    0% {transform: translate(0,0) rotate(-360deg);}
+    25% {transform: translate(125px,0) rotate(-720deg);}
+    50% {transform: translate(125px, 125px) rotate(-1080deg);}
+    75% {transform: translate(0,125px) rotate(-1440deg);}
+    100% {transform: translate(0,0) rotate(-1800deg);}
+}

@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+body>p {
+    font-style: italic;
+}
+
+#ex1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*EX1*/
+
+#box1 {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+#box1:hover {
+    background-color: blue;
+}
+
+/*end EX1*/
+
+/*EX2*/
+
+#box2 {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+#box2:hover {
+    background-color: blue;
+}
+
+#box3 {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: steps(5, start);
+    -moz-transition-timing-function: steps(5, start);
+    -o-transition-timing-function: steps(5, start);
+    transition-timing-function: steps(5, start);
+}
+
+#box3:hover {
+    background-color: blue;
+}
+
+#ex1-2:hover div {
+    background-color: blue !important;
+}
+
+/*end EX2*/

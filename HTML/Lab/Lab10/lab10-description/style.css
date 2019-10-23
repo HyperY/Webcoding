@@ -1,0 +1,47 @@
+body {
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+body>p {
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row .box {
+    margin: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    color: blue;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure, img {
+    max-width: 100%;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+figure {
+    box-shadow: 1px 1px 1px 1px darkgrey;
+}
