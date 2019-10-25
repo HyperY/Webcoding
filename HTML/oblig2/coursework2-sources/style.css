@@ -1,4 +1,4 @@
-/**/
+/* font-face starts */
 @font-face {
     font-family: macando-swash-caps;
     src: url(assets/fonts/MacondoSwashCaps-Regular.ttf);
@@ -9,11 +9,17 @@
     src: url(assets/fonts/Montserrat-Regular.otf)
 }
 
+/* font-face end 
+    Body starts
+*/
+
 body {
     margin: 0;
     font-size: 1.5rem;
     font-family: "montserrat", sans-serif;
 }
+
+/* body ends, header starts */
 
 header {
     display: flex;
@@ -31,6 +37,8 @@ header div {
     font-family: "macando-swash-caps", 'Courier New', serif;
 }
 
+/* header ends, main-box starts */
+
 .main-box {
     margin: 0 15%;
     padding: 5%;
@@ -44,6 +52,8 @@ header div {
 .main-box img {
     max-width: 100%;
 }
+
+/* Newsletter introduction starts */
 
 #newsletter-introduction {
     text-align: center;
@@ -68,6 +78,8 @@ header div {
     color: darkgrey;
     font-size: 0.8rem;
 }
+
+/* Newsletter introduction ends, main article starts */
 
 article>div {
     display: flex;
@@ -95,7 +107,11 @@ figure {
     margin: 0;
 }
 
+/* main article and main-box ends, footer starts */
+
 footer {
     text-align: center;
     font-size: 0.9em;
 }
+
+/* footer ends, media-queries for smaller screens starts */
