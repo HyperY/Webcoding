@@ -135,3 +135,39 @@ footer {
         margin: 0 5%;
     }
 }
+
+/* screens smaller than 600px, changed font-size, changed header, changed layout */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    header>div {
+        width: 90vw;
+        min-height: 1.5em;
+    }
+
+    .main-box {
+        bottom: 1vh;
+        margin: 0 1%;
+        border-radius: 1em;
+        box-shadow: 0;
+    }
+
+    article>div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    article figure {
+        order: 1;
+    }
+}
+
+/* media queries end, end of document */
