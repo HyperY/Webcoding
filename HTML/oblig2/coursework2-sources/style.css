@@ -63,6 +63,7 @@ header div {
     font-family: "macando-swash-caps", 'Courier New', serif;
     text-transform: capitalize;
     letter-spacing: 0.1em;
+    text-decoration: underline;
 }
 
 #newsletter-introduction li {
