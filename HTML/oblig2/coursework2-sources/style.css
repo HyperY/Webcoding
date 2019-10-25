@@ -74,7 +74,7 @@ header div {
 
 #newsletter-introduction li::before,
 #newsletter-introduction li::after {
-    content: " ***";
+    content: " * * *";
     font-weight: bolder;
     color: darkgrey;
     font-size: 0.8rem;
