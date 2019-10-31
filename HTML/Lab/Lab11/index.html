@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <fieldset>
+        <form>
+            <fieldset>
+                <label>Full name*: <input type="text" name="fullname" size="30" placeholder="FirstName LastName"></label>
+            </fieldset>
+
+            <fieldset>
+                <label>Email adress*: <input type="email" name="email" size="30"> </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Select Tour Package*: </label>
+                <select name="package">
+                    <option value="none" selected="selected">None</option>
+                    <option value="something">Something</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label for="date">Arrival Date*:</label>
+                <input type="date" name="arrival" id="date" />
+            </fieldset>
+
+            <fieldset>
+                <label>Number of persons*:</label>
+                <input type="number" name="amount" min="1">
+            </fieldset>
+
+            <fieldset>
+                <label>What would you want to avail?*</label>
+                <input type="checkbox" name="offer" value="boarding"> Boarding
+                <input type="checkbox" name="offer" value="fooding"> Fooding
+                <input type="checkbox" name="offer" value="sightseeing"> Sight Seeing
+            </fieldset>
+
+            <fieldset>
+                <label>Discount Coupon Code: <input type="text" name="code" size="30"></label>
+            </fieldset>
+
+            <fieldset>
+                <label>Terms and Conditions</label>
+                <input type="radio" name="terms" value="agree"> I agree
+                <input type="radio" name="terms" value="disagree"> I disagree
+            </fieldset>
+
+            <input type="submit" value="Complete reservation"/>
+        </form>
+    </fieldset>
+</body>
+</html>
