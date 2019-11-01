@@ -11,29 +11,29 @@
     <fieldset>
         <form>
             <fieldset>
-                <label>Full name*: <input type="text" name="fullname" size="30" placeholder="FirstName LastName"></label>
+                <label>Full name*: <input type="text" name="fullname" size="30" placeholder="FirstName LastName" required></label>
             </fieldset>
 
             <fieldset>
-                <label>Email adress*: <input type="email" name="email" size="30"> </label>
+                <label>Email adress*: <input type="email" name="email" size="30" required> </label>
             </fieldset>
 
             <fieldset>
                 <label>Select Tour Package*: </label>
-                <select name="package">
-                    <option value="none" selected="selected">None</option>
+                <select name="package" required>
+                    <option value="" selected="selected">None</option>
                     <option value="something">Something</option>
                 </select>
             </fieldset>
             
             <fieldset>
                 <label for="date">Arrival Date*:</label>
-                <input type="date" name="arrival" id="date" />
+                <input type="date" name="arrival" id="date" required/>
             </fieldset>
 
             <fieldset>
                 <label>Number of persons*:</label>
-                <input type="number" name="amount" min="1">
+                <input type="number" name="amount" min="1" required>
             </fieldset>
 
             <fieldset>
@@ -49,7 +49,7 @@
 
             <fieldset>
                 <label>Terms and Conditions</label>
-                <input type="radio" name="terms" value="agree"> I agree
+                <input type="radio" name="terms" value="agree" required> I agree
                 <input type="radio" name="terms" value="disagree"> I disagree
             </fieldset>
 
