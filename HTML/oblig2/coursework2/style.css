@@ -154,7 +154,7 @@ footer {
         bottom: 1vh;
         margin: 0 1%;
         border-radius: 1em;
-        box-shadow: 0;
+        box-shadow: none;
     }
 
     article>div {
