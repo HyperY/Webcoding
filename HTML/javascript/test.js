@@ -18,3 +18,6 @@ if (jakke=4){
 else {
     console.log("Still not 4");
 }
+
+var d = new Date();
+alert(d);
