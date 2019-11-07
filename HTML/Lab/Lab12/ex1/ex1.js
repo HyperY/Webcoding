@@ -1,0 +1,6 @@
+/* 
+Create your js code here.
+Make sure this file is linked in your html file.
+Remember that it is a good practice to include your
+scripts at the end of the body
+*/
