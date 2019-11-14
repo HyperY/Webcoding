@@ -8,7 +8,8 @@ function count(onclick){
             counter++;
         } 
     }
-    document.getElementById("submit").innerHTML = counter;
+    var output = ("There is a total of " + counter + " " + "'" + letter + "'" +" in your text.");
+    document.getElementById("submit").innerHTML = output;
 }
 
 function count1(onclick){
@@ -22,10 +23,10 @@ function count1(onclick){
         }
     }
     
-
-    //var p = document.createElement('p');
-    //var element = "There is a total of" + counter1 + " " + letter1 + " in your text.";
-    //p.appendChild(element);
-    console.log(counter1);
+    var p = document.createElement("P");
+    var t = document.createTextNode("There is a total of " + counter1 + " " + "'" + letter1 + "'" +" in your text.");
+    p.appendChild(t);
+    document.body.appendChild(p);
+    console.log(p);
 }
     
