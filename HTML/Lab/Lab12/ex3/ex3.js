@@ -17,10 +17,11 @@ function count1(onclick){
     let counter1 = 0;
 
     for(var i = 0; i < text1.length; i++){
-        if(text[i] == letter1){
+        if(text1[i] == letter1){
             counter1++;
         }
     }
+    
 
     //var p = document.createElement('p');
     //var element = "There is a total of" + counter1 + " " + letter1 + " in your text.";
