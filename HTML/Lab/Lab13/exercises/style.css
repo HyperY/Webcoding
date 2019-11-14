@@ -1,0 +1,23 @@
+body {
+    padding: 5%;
+}
+
+.course-item {
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 20px rgb(121, 108, 108);
+    background-color: cadetblue;
+    font-size: 1.2em;
+    color:white;
+}
+
+.course-item > h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.level {
+    float: right;
+    font-size: 200%;
+    font-weight: bold;
+}
