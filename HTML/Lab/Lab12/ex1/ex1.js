@@ -24,7 +24,7 @@ var counter = 0;
 for(var index = 0; index < text.length; index++){
     if(text[index] == letter){
         counter++;
-    }
+    } 
 }
 
 alert("Your text contains " + counter + " '" + letter + "'");
