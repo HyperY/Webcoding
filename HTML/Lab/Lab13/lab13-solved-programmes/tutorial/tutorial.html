@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing with the DOM</title>
+    <!-- 
+        Using internal CSS because there is only one rule.
+        However, don't forget that usually it is better an external CSS file. 
+     -->
+    <style>
+        body {
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My first DOM manipulation</h1>
+    <p id="myParagraph"></p>
+    <p id="counter"></p>
+    <button type="button" onclick="incrementCounter()">Increment</button>
+    <!-- (Best practice) Javascript files are loaded at the end of the body -->
+    <script src="script.js"></script>
+</body>
+
+</html>
