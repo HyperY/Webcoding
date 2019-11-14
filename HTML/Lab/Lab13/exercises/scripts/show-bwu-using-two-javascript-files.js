@@ -14,5 +14,10 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
     //  a) get the div: var courseItem = helpers.getHTMLCourseFromCodeNameDescriptionLevel(bwuCourses[i].code,...
     //  b) add the div to the body...
     //console.log(helpers);
-
+    console.log(courses["bwu"].length);
+    var bwuCourses = courses["bwu"];
+    for(var i = 0; i < bwuCourses.length; i++) {
+        var courseItem = helpers.getHTMLCourseFromCodeNameDescriptionLevel(bwuCourses[i].code, bwuCourses[i].name, bwuCourses[i].description, bwuCourses[i].level);
+        document.body.appendChild(courseItem);
+    }
 })();
