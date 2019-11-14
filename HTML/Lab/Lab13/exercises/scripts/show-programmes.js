@@ -11,7 +11,12 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
     // b) inside the loop document.createElement("p") (and save it in a variable)
     // c) use the innerHTML too add the text (acronym of the programme). This is, programmes[i]
     // c) use appendChild to add the previous element to the body
-    for(var i = 0; i < programmes.length; i++){
-        if()
+    console.log(programmes.length);
+    var programme;
+    for(programme = 0; programme < programmes.length; programme++){
+        console.log('programme ' + programmes);
+        var p = document.createElement("p");
+        p.innerHTML = programmes[programme];
+        document.body.appendChild(p);
     }
 })();
