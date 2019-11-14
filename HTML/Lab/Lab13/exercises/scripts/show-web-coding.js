@@ -14,4 +14,41 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
     // your code goes here... 
     // (HINT: you can "borrow some text or ideas from 
     // the helpers file...")
+    var divCourse = document.createElement("div");
+    divCourse.className = "course-item";
+
+    var htmlTitle = getTitleElement(courseName, courseCode);
+    divCourse.appendChild(htmlTitle);
+
+    var paragraphWithDescriptionAndLevel = getParagraphWithDescriptionAndLevel(courseDescription, courseLevel);
+    divCourse.appendChild(paragraphWithDescriptionAndLevel);
+    document.body.appendChild(divCourse);
+
+    function getTitleElement(name, code) {
+        var titleH2 = document.createElement("h2");
+        titleH2.innerHTML = code + " - " + name;
+        return titleH2;
+    }
+
+    function getDescriptionElement(description) {
+        var descSpan = document.createElement("span");
+        descSpan.innerHTML = description;
+        return descSpan;
+    }
+
+    function getLevelElement(level) {
+        var levelSpan = document.createElement("span");
+        levelSpan.innerHTML = "Level: " + level;
+        levelSpan.className = "level";
+        return levelSpan;
+    }
+
+    function getParagraphWithDescriptionAndLevel(description, level) {
+        var p = document.createElement("p");
+        var htmlDesc = getDescriptionElement(description);
+        p.appendChild(htmlDesc);
+        var htmlLevel = getLevelElement(level);
+        p.appendChild(htmlLevel);
+        return p;
+    }
 })();
