@@ -13,5 +13,16 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
     //You need to create a loop to go through all the programmes
     //and inside this loop, you will need another loop to go through
     //all the courses...
+    var i, j;
+    for(i = 0; i < programmes.length; i++){
+        var h2 = document.createElement("h2");
+        h2.innerHTML = programmes[i];
+        document.getElementById(idContainer).appendChild(h2);
 
+        var currentCourses = courses[programmes[i]];
+        for(j = 0; j < currentCourses.length; j++) {
+            var menuItem = helpers.getHTMLCourseFromCodeNameDescriptionLevel(currentCourses[j].code, currentCourses[j].name, currentCourses[j].description, currentCourses[j].level);
+            document.getElementById(idContainer).appendChild(menuItem);
+        }
+    }
 })();
