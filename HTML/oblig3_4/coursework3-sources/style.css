@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "ntnu_din", sans-serif;
 }
 
@@ -31,7 +31,7 @@ header div {
 .bounce {
     background: url(assets/images/arrow.png) center no-repeat;
     opacity: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin: 0 auto;
     animation: bounce 2s infinite;
@@ -47,4 +47,59 @@ header div {
 	60% {
         transform:translateY(-15px);
     }
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:    "nav"
+                            "main"
+                            "sidebar"
+                            "footer";
+    grid-template-columns: 1fr;
+}
+
+nav {
+    grid-area: nav;
+    display: grid;
+    justify-items: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#active {
+    border-bottom: solid #00509e;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    background: #30313f;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+footer figure img {
+    height : 50px;
+    padding: 10px;
 }
