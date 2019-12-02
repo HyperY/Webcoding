@@ -9,6 +9,10 @@ body {
     font-family: "ntnu_din", sans-serif;
 }
 
+h1 {
+    color: #00509e;
+}
+
 header {
     display: flex;
     background: url(assets/images/mustad.jpg) center/cover no-repeat fixed;
@@ -26,6 +30,7 @@ header div {
     opacity: 0.7;
     padding: 1em;
     min-width: 3em;
+    text-align: center;
 }
 
 .bounce {
@@ -89,6 +94,20 @@ nav li a {
 .main {
     grid-area: main;
     display: grid;
+    margin: 5%;
+}
+
+.main img {
+    height: 150px;
+}
+
+.main p {
+    text-align: center;
+}
+
+.main a {
+    text-decoration: none;
+    color: #00509e;
 }
 
 footer {
