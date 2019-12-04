@@ -14,6 +14,10 @@ h2 {
     color: #00509e;
 }
 
+.blue {
+    color: #00509e;
+}
+
 header {
     display: flex;
     background: url(assets/images/test.jpg) center/cover no-repeat fixed;
