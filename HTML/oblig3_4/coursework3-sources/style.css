@@ -108,7 +108,7 @@ nav li a {
 }
 
 .main p {
-    text-align: center;
+    text-align: left;
 }
 
 .main a {
@@ -124,7 +124,7 @@ input,
 select,
 textarea {
     width: 100%;
-    padding: 12px 20px;
+    padding: 8px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #00509e;
@@ -206,5 +206,9 @@ iframe {
 
     aside img {
         display: none;
+    }
+
+    footer {
+        margin-top: 5%;
     }
 }
