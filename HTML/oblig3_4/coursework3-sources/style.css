@@ -95,6 +95,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: black;
+    padding: 10%;
 }
 
 #active {
@@ -118,17 +119,6 @@ nav li a {
 
 .main img {
     width: 100%;
-}
-
-.button {
-    width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 .course-item {
@@ -162,7 +152,8 @@ textarea {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type=submit],
+.button {
     width: 100%;
     background-color: #ffffff;
     color: #000000;
@@ -173,7 +164,8 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+.button:hover {
     background-color: #00509e;
     color: #ffffff;
     border: 1px solid #00509e;
@@ -222,7 +214,11 @@ iframe {
     }
 
     nav li {
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+
+    nav li a {
+        padding: 0;
     }
 
     .bounce {
