@@ -120,6 +120,36 @@ nav li a {
     width: 100%;
 }
 
+.button {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.course-item {
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 20px #000000;
+    background-color: #00509e;
+    color: #ffffff;
+}
+
+.course-item > h2 {
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.level {
+    float: right;
+    font-size: 200%;
+    font-weight: bold;
+}
+
 input,
 select,
 textarea {
