@@ -9,7 +9,7 @@ loaded in your html files right after the menu-db.file. For example:
         and your scripts goes here...
     </body>
 */
-var HELPERS = function () {
+var HELPERS = function() {
 
     var publicMethods = {
         getHTMLCourseFromCodeNameDescriptionLevel: getHTMLFromCourseParams

@@ -10,19 +10,41 @@
 </head>
 
 <body>
-    <nav>
-        <img src="../assets/images/ntnu-logo-black.png" alt="Logo of NTNU in black">
-        <ul>
-            <li><a href="../index.html">Home</a> </li>
-            <li id="active"><a href="index.html">Programmes</a></li>
-            <li><a href="../applications-page/index.html">Applications</a></li>
-            <li><a href="../contacts-page/index.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav>
+            <img src="../assets/images/ntnu-logo-black.png" alt="Logo of NTNU in black">
+            <ul>
+                <li><a href="../index.html">Home</a> </li>
+                <li id="active"><a href="index.html">Programmes</a></li>
+                <li><a href="../applications-page/index.html">Applications</a></li>
+                <li><a href="../contacts-page/index.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <p>Inspect the code and take a look to the output of the console. You will find there a list of ice creams.</p>
-    <p>During the lab sessions, we will prepare some examples that you could reuse in this assignment.</p>
+        <section class="main">
+            <h1>Programmes</h1>
+            <button type="button" onclick="bwu()">Bachelor in Web Development</button>
+            <button type="button" onclick="bixd()">Bachelor in Interaction Design</button>
+            <button type="button" onclick="bmed()">Bachelor in Graphical Design</button>
+            <button type="button" onclick="arweb()">Year Study in Web Design</button>
+            <button type="button" onclick="mixd()">Master in Interaction Design</button>
+            <div id="course"></div>
+        </section>
+
+        <aside>
+            <h2>Sidebar</h2>
+        </aside>
+
+        <footer>
+            <figure>
+                <img src="../assets/images/ntnu-logo.png" alt="the logo of ntnu in white">
+            </figure>
+        </footer>
+
+    </div>
     <script src="programmes-db.js"></script>
+    <script src="helpers.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>
