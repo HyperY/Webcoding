@@ -1,6 +1,5 @@
 // console.log(courses["bwu"]);
-
-function all() {
+function allCourses() {
     var helpers = HELPERS();
     var idContainer = "course";
 
