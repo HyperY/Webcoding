@@ -1,8 +1,8 @@
 // console.log(courses["bwu"]);
-/*
+
 function all() {
     var helpers = HELPERS();
-    var idContainer = "programmes-container";
+    var idContainer = "course";
 
     var i, j;
     for(i = 0; i < programmes.length; i++) {
@@ -17,7 +17,7 @@ function all() {
         }
     }
 }
-*/
+
 function bwu() {
     var helpers = HELPERS();
     var bwuCourses = courses["bwu"];

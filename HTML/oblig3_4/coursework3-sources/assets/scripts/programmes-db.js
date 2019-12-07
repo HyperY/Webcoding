@@ -201,6 +201,7 @@ courses["mixd"] = [
     }
 ];
 //REMOVE THIS AFTER CHECKING HOW IT WORKS
+/*
 console.log("Programmes:");
 console.log(programmes);
 console.log("All the courses grouped by programme:");
@@ -210,4 +211,5 @@ console.log("--Code:: " + courses["bwu"][0].code);
 console.log("--Name:: " + courses["bwu"][0].name);
 console.log("--Description: " + courses["bwu"][0].description);
 console.log("--level: " + courses["bwu"][0].level);
+*/
 //End remove
