@@ -46,12 +46,6 @@ courses["bwu"] = [
         level: 1
     },
     {
-        code: "IDG1362",
-        name: "design thinking",
-        description: "The core of this course is to introduce the students for Design Thinking and they will learn to use it by identifying a problem or a need in a software interface for a defined group of users. The students wil then develop suggested solutions through using creative techniques and make sketches and prototypes and in a systematic way, test these solutions on the primary users of the software.",
-        level: 1
-    },
-    {
         code: "IDG3100",
         name: "in-depth project in web development",
         description: "The students choose a topic and develop a personal project either individually or in groups. The topic must represent a challenge within the specific area of study and it must require that the student adheres to practices that are common within the area.",

@@ -2,6 +2,7 @@
 function allCourses() {
     var helpers = HELPERS();
     var idContainer = "course";
+    document.getElementById("course").innerHTML = "";
 
     var i, j;
     for(i = 0; i < programmes.length; i++) {
@@ -70,4 +71,8 @@ function mixd() {
         var courseItem = helpers.getHTMLCourseFromCodeNameDescriptionLevel(mixdCourses[i].code, mixdCourses[i].name, mixdCourses[i].description, mixdCourses[i].level);
         document.getElementById("course").appendChild(courseItem);
     }
+}
+
+function clearArea() {
+    document.getElementById("course").innerHTML = "";
 }
