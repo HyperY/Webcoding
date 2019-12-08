@@ -78,39 +78,3 @@ function mixd() {
 function clearArea() {
     document.getElementById("course").innerHTML = "";
 }
-
-// Gives date on application page
-const date = new Date();
-
-let [day, month, year] = [date.getDate(), date.getMonth() + 1, date.getFullYear()];
-
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day; 
-
-const today = year + "-" + month + "-" + day;
-
-document.getElementById('theDate').value = today;
-document.getElementById('theDate').setAttribute("min", today);
-
-// Checking time and day constraints
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-function checkDate() {
-    const date = document.getElementById("theDate").value;
-    const [theYear, theMonth, theDay] = date.split("-");
-    const checkDay = new Date(`${months[theMonth-1]} ${theDay}, ${theYear} 00:00:00`).getDay();
-
-    if (checkDay === 5) {
-        document.getElementById("theTime").setAttribute("max", "15:00");
-    }
-
-    else if (checkDay === 6, 7) {
-        document.getElementById("theTime").setAttribute(none);
-    }
-
-    else {
-        document.getElementById("theTime").setAttribute("max", "16:00");
-    }
-}
-
-checkDate();

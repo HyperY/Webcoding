@@ -22,15 +22,22 @@
         </nav>
 
         <section class="main">
-            <h1>Programmes</h1>
-            <p>Here you can see the different programmes that are offered in the Faculty of Design, click the boxes to see the courses</p>
-            <button class="button" type="button" onclick="clearArea()">Clear</button>
-            <button class="button" type="button" onclick="allCourses()">Show all courses</button>
-            <button class="button" type="button" onclick="bwu()">Bachelor in Web Development</button>
-            <button class="button" type="button" onclick="bixd()">Bachelor in Interaction Design</button>
-            <button class="button" type="button" onclick="bmed()">Bachelor in Graphical Design</button>
-            <button class="button" type="button" onclick="arweb()">Year Study in Web Design</button>
-            <button class="button" type="button" onclick="mixd()">Master in Interaction Design</button>
+            <div class="button-div">
+                <h1>Programmes</h1>
+                <p>Here you can see the different programmes that are offered in the Faculty of Design, click the boxes
+                    to see the courses</p>
+                <button class="button-small" type="button" onclick="lowLevel()">Sort by Level: Low - High</button>
+                <button class="button-small" type="button" onclick="highLevel()">Sort by Level: High - Low</button>
+                <button class="button-small" type="button" onclick="AtoZ()">Sort alphabetically: A - Z</button>
+                <button class="button-small" type="button" onclick="ZtoA()">Sort alphabetically: Z - A</button>
+                <button class="button" type="button" onclick="clearArea()">Clear</button>
+                <button class="button" type="button" onclick="allCourses()">Show all courses</button>
+                <button class="button" type="button" onclick="bwu()">Bachelor in Web Development</button>
+                <button class="button" type="button" onclick="bixd()">Bachelor in Interaction Design</button>
+                <button class="button" type="button" onclick="bmed()">Bachelor in Graphical Design</button>
+                <button class="button" type="button" onclick="arweb()">Year Study in Web Design</button>
+                <button class="button" type="button" onclick="mixd()">Master in Interaction Design</button>
+            </div>
             <div id="course"></div>
         </section>
 
@@ -50,6 +57,7 @@
     <script src="../assets/scripts/programmes-db.js"></script>
     <script src="../assets/scripts/helpers.js"></script>
     <script src="../assets/scripts/functions.js"></script>
+    <script src="../assets/scripts/sorting.js"></script>
 </body>
 
 </html>

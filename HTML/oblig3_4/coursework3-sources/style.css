@@ -175,6 +175,26 @@ input[type=submit]:hover,
     border: 1px solid #00509e;
 }
 
+.button-small {
+    width: 20%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:disabled {
+    background-color: #30313f;
+    color: #ffffff;
+}
+
+.button-div {
+    display: block;
+}
+
 aside {
     grid-area: side;
     display: grid;
