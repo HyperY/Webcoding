@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NTNU Design - Application</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -67,6 +67,12 @@
                     <label for="comments">Other Comments: </label>
                     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
 
+                    <label for="theDate">Pick a date for a meeting: </label>
+                    <input type="date" id="theDate" onchange="checkDate()" required>
+
+                    <label for="theTime">Pick a time for the meeting: </label>
+                    <input type="time" id="theTime" min="08:00" max="16:00" value="08:00" required>
+
                     <input type="submit" value="Send Application">
                 </form>
             </fieldset>
@@ -83,6 +89,7 @@
                 <img src="../assets/images/ntnu-logo.png" alt="the logo of ntnu in white">
             </figure>
         </footer>
+        <script src="../assets/scripts/functions.js"></script>
     </div>
 </body>
 

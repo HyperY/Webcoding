@@ -20,7 +20,7 @@ h2 {
 
 header {
     display: flex;
-    background: url(assets/images/test.jpg) center/cover no-repeat fixed;
+    background: url(assets/images/mustad_hd.jpeg) center/cover no-repeat fixed;
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -208,6 +208,11 @@ iframe {
     body {
         font-size: 1rem;
     }
+
+    header {
+        background: url(assets/images/mustad_hd.jpeg) center center no-repeat scroll;
+        background-size: cover;
+    }
     
     .container {
         grid-template-areas:    "nav"
@@ -223,6 +228,7 @@ iframe {
 
     nav li a {
         padding: 0;
+        margin: 8px;
     }
 
     .bounce {
