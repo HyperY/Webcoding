@@ -1,0 +1,97 @@
+body {
+    background-color: #DDDDDD;
+    padding: 5% 20%;
+    background-image: url("assets/pattern.png");
+    background-attachment: fixed;
+}
+
+/* Use “assets/grass.png” as a background of the h1 element. */
+h1 {
+    background-image: url(assets/grass.png);
+    background-repeat: repeat-x;
+    /* 
+    we set the width to auto and the heigh to 36px. 
+    background-size:contain would achieve a similar
+    */
+    background-size: auto 36px;
+}
+
+/* All headings should be displayed using capital letters (css) */
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+/* 
+    Contents (e.g: text and images) inside plant-box(es) should be displayed centered 
+    Add a box-shadow to all plant boxes
+    Add an internal space inside the plant boxes so that their contents do not touch the edges of the box (e.g: 5%).
+    Add a 20px to separate boxes
+    Plant boxes must have a linear gradient background from colour “#F7FFF5” to colour “#C2E7CD”
+*/
+.plant-box {
+    text-align: center;
+    box-shadow: 5px 5px 5px 3px #777777;
+    padding: 5%;
+    margin: 20px 0;
+    background-image: -webkit-linear-gradient(#f7fff5, #c2e7cd);
+    background-image: -moz-linear-gradient(#f7fff5, #c2e7cd);
+    background-image: -o-linear-gradient(#f7fff5, #c2e7cd);
+    background-image: linear-gradient(#f7fff5, #c2e7cd);
+}
+
+/* Headings inside plant-box(es) should be aligned to the right */
+.plant-box h2 {
+    text-align: right;
+}
+
+/* 
+    images can not exceed the limits of the box in which they are contained 
+    Images inside plant boxes can not exceed 60% wide of the box in which they are contained
+*/
+.plant-box img {
+    max-width: 100%;
+    display: none;
+    margin: 0 auto;
+}
+
+/*
+    Change the box-shadow when the user moves the mouse over the plant-box
+    Change the linear gradient background of plant-boxes when the user moves the mouse over the box
+*/
+.plant-box:hover {
+    box-shadow: 10px 10px 5px 2px #af9e9e;
+    background-image: -webkit-linear-gradient(#f1ebeb, #e1cfcf);
+    background-image: -moz-linear-gradient(#f1ebeb, #e1cfcf);
+    background-image: -o-linear-gradient(#f1ebeb, #e1cfcf);
+    background-image: linear-gradient(#f1ebeb, #e1cfcf)
+}
+
+/* Images inside plant boxes will not be displayed until the user moves the mouse over the plant-box. */
+.plant-box:hover img {
+    display: block;
+}
+
+/* The text inside plant-box (<p>) will not be displayed when the mouse is over the box */
+.plant-box:hover p {
+    display: none;
+}
+
+/* h2 inside plant-box will be displayed centered when the mouse is over the box */
+.plant-box:hover h2 {
+    text-align: center;
+}
+
+/* Underneath we add the classes for "Italic", "Bold" and "Italic_Bold"*/
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic_bold {
+    font-style: italic;
+    font-weight: bold;
+}
