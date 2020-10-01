@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>html template</title>
+	<!--
+		This html template uses an internal style sheet because it works as an academic example.
+		Usually, it is recommended the use of EXTERNAL CSS files.
+		* An internal style sheet may be used if one single page has a unique style.
+		* Internal styles are defined within the <style> element, inside the <head> section of an HTML page
+	-->
+	<style type="text/css">
+		/*EX2: Use Georgia as a default font. Use the generic serif name as a fallback font. */
+		@font-face {
+			font-family: 'death_starregular';
+			src: url('assets/deathstar-webfont.woff2') format('woff2'),
+				 url('assets/deathstar-webfont.woff') format('woff'),
+				 url('assets/deathstar-webfont.ttf') format('truetype'),
+				 url('assets/deathstar-webfont.svg#death_starregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		/*Add a 5% top and bottom padding t and a 10% right and left padding to the whole page (use a shorthand syntax)*/
+		/*EX2: Use Georgia as a default font. Use the generic serif name as a fallback font. */
+		body {
+			background-color: #DDDDDD;
+			padding: 5% 10%;
+			font-family: Georgia, serif;
+		}
+
+		/*All headings should have a 0.2em space between letters*/
+		h1, h2 {
+			letter-spacing: 0.2em;
+			font-family: 'death_starregular', serif;
+		}
+
+		/*h1 should:
+		be uppercase
+		be #222222
+		has a text shadow (h-shadow 5px, v-shadow 5px, blur-radius 5px and color #363636)
+		*/
+		h1 {
+			text-transform: uppercase;
+			color: #222222;
+			text-shadow: 5px 5px 5px #363636;
+		}
+
+		/*h2 should be capitalized and italic*/
+		h2 {
+			text-transform: capitalize;
+			font-style: italic;
+		}
+
+		/*Plant boxes should:
+		has top and bottom padding of 10px and a right and left padding of 10%
+		has a top and bottom margin of 25px and no margin on left and right sides
+		has a text shadow (h-shadow 3px, v-shadow 4px, blur-radius 20px and color #363636)
+		has a white background color (#FFFFFF)
+		*/
+		.plant-box {
+			padding: 10px 10%;
+			margin: 25px 0;
+			box-shadow: 3px 4px 20px #363636;
+			background-color: #FFFFFF;
+		}
+
+		/*Set the amount of space used for lines to 1.5em. Apply this rule only to paragraph inside plant boxes. Use, also, and indentation of 1em*/
+		.plant-box p{
+			line-height: 1.5em;
+			text-align: justify;
+			text-indent: 1em;
+		}
+
+		/*The first span element inside a paragraph of the plant box should be displayed in bold and italic. Use the proper selector to achieve that. 
+		The space between letters must be 0.2em and the space between words 0.8em
+		*/
+		.plant-box p span:first-child {
+			font-weight: bold;
+			font-style: italic;
+			word-spacing: 0.8em;
+			letter-spacing: 0.2em;
+		}
+
+		/*All images inside the plant box should occupy 40% of width */
+		.plant-box img {
+			width: 40%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Planting Guide</h1>
+		
+	<div class="plant-box" id="box1">
+		<h2>Magnolia</h2>
+		<img src="assets/magnolia.jpg" alt="magnolia">
+		<p><span>Magnolia grandiflora</span>, commonly known as the Southern magnolia or bull bay, is a tree of the
+			family Magnoliaceae native to the southeastern United States, from coastal Virginia south to central Florida, and west
+			to eastern Texas and Oklahoma. Reaching 27.5 m (90 ft) in height, it is a large striking evergreen tree with large dark
+			green leaves and large white fragrant flowers. Widely cultivated around the world, over a hundred cultivars have been
+			bred and marketed commercially. The timber is hard and heavy, and has been used commercially to make furniture, pallets,
+			and veneer.
+		</p>
+	</div>
+
+	<div class="plant-box" id="box2">
+		<h2>Ranunculus</h2>
+		<img src="assets/ranunculus.jpg" alt="ranunculus">
+		<p><span>Ranunculus asiaticus (Persian Buttercup)</span> is a species of buttercup (Ranunculus) native to the eastern Mediterranean
+			region in southwestern Asia, southeastern Europe (Crete, Karpathos and Rhodes), and northeastern Africa. It is a herbaceous
+			perennial plant growing to 45 cm tall, with simple or branched stems. The basal leaves are three-lobed, with leaves higher
+			on the stems more deeply divided; like the stems, they are downy or hairy. The flowers are 3-5 cm diameter, variably red
+			to pink, yellow, or white, with one to several flowers on each stem.
+		</p>
+	</div>
+
+	<div class="plant-box" id="box3">
+		<h2>Tulip</h2>
+		<img src="assets/tulip.jpg" alt="tulip">
+		<p><span>Tulipa gesneriana L. or "Didier's tulip"</span> is a plant belonging to the family of Liliaceae. This species has
+			uncertain origins, possibly from Asia, and has become naturalised in south-west Europe. Most of the cultivated species,
+			subspecies and cultivars of tulip are derived from Tulipa gesneriana. The flower and bulb can cause dermatitis through
+			the allergen, tuliposide A, even though the bulbs may be consumed with little ill-effect. The sweet-scented bisexual flowers
+			appear during April and May. Bulbs are extremely resistant to frost, and can tolerate temperatures well below freezing
+			- a period of low temperature is necessary to induce proper growth and flowering, triggered by an increase in sensitivity
+			to the phytohormone auxin. The bulbs may be dried and pulverised and added to cereals or flour.
+		</p>
+	</div>
+
+</body>
+
+</html>
