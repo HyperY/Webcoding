@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Flex layout template</title>
+	<style>
+		/* Removing all the default margins */
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		/* The whole page is a flex container  */
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+
+		/* Header and footer same styles. 
+		Flex containers with their elements centered horizontally and vertically */
+		header,
+		footer {
+			height: 10vh;
+			display: flex;
+			align-items: center;
+			background-color: lightblue;
+			justify-content: center;
+		}
+
+		/* Row with "2 columns". The flex items will be strech to fill the container*/
+		main {
+			display: flex;
+			flex-direction: row;
+			height: 80vh;
+			align-items: stretch;
+		}
+
+		/* nav is a flex container where flex items are placed in columns  */
+		nav {
+			flex: 20;
+			display: flex;
+			flex-direction: column;
+			background-color: lightcoral;
+		}
+
+		nav>* {
+			/* flex: 1; 
+			is the same as saying flex: 1 1 auto;
+			or in other words, 
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: auto;*/
+			flex: 1;
+			/* all the elemnts will be flex container 
+			so that we can align them vertically and horizontally */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav>*:hover {
+			box-shadow: 0px 0px 5px 0px black;
+		}
+
+		nav a {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: black;
+		}
+
+		section {
+			flex: 80;
+			background-color: lightgreen;
+			overflow: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		section>* {
+			text-align: justify;
+			margin: 5% 5% 0 5%;
+		}
+
+		section>*:last-child {
+			margin-bottom: 5%;
+		}
+
+		/* With small screens we change the layout:
+		NOTE: Newer "design" practices advocates for going movile first
+		which means that the page would be implemented first considering small screens
+		and then use the media queries for styling larger screens. In other words, the opposite
+		of what we are doing here.
+		 */
+		@media only screen and (max-width: 600px) {
+			main {
+				flex-direction: column;
+			}
+
+			nav {
+				flex-direction: row;
+				flex: 10;
+			}
+
+			section {
+				flex: 90;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		&lt;header&gt;
+	</header>
+	<main>
+		<nav>
+			<a href="#">&lt;section&gt;</a>
+			<a href="#">Page 1</a>
+			<a href="#">Page 2</a>
+			<a href="#">Page 3</a>
+			<a href="#">Page 4</a>
+			<a href="#">Page 5</a>
+		</nav>
+		<section>
+			<article>
+				<h2>Article 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+					sociis natoque
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+					eu, pretium
+					quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+					enim
+					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+					tincidunt.
+					Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+					consequat
+					vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+					ut
+					metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+					ultricies
+					nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+					amet
+					adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+					odio
+					et
+					ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+					eros
+					faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo
+					eget
+					bibendum sodales, augue velit cursus nunc,
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+					sociis natoque
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+					eu, pretium
+					quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+					enim
+					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+					tincidunt.
+					Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+					consequat
+					vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+					ut
+					metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+					ultricies
+					nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+					amet
+					adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+					odio
+					et
+					ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+					eros
+					faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo
+					eget
+					bibendum sodales, augue velit cursus nunc,
+				</p>
+			</article>
+
+			<article>
+				<h2>Article 2</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+					sociis natoque
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+					eu, pretium
+					quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+					enim
+					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+					tincidunt.
+					Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+					consequat
+					vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+					ut
+					metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+					ultricies
+					nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+					amet
+					adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+					odio
+					et
+					ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+					eros
+					faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo
+					eget
+					bibendum sodales, augue velit cursus nunc,
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+					sociis natoque
+					penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+					eu, pretium
+					quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+					enim
+					justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+					tincidunt.
+					Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+					consequat
+					vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+					ut
+					metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+					ultricies
+					nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+					amet
+					adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
+					odio
+					et
+					ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+					eros
+					faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo
+					eget
+					bibendum sodales, augue velit cursus nunc,
+				</p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		&lt;footer&gt;
+	</footer>
+</body>
+
+</html>
