@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox vs CSS Grid Layout</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- UNCOMMENT THE PROPER LINK TO LOAD THE USED LAYOUT -->
+    <link rel="stylesheet" href="styles/flexbox-layout.css">
+</head>
+
+<body>
+    <!-- CONTAINER FOR THE PAGE -->
+    <!-- set max-width (for example to 900px);
+         set background color (for example, white) 
+         centered 
+    -->
+    <div class="container">
+
+        <!-- HEADER -->
+        <!-- 
+            Contains Logo(or name of the page) + 2 links (home and contact) 
+            Align to the left
+        -->
+        <!-- 
+            Also contains a LogIn button (align to the right)
+         -->
+        <header>
+            <nav>
+                <a href><h1>Header</h1></a>
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button>LogIn</button>
+        </header>
+
+        <div id="container">
+            <!-- Main content of the page -->
+            <!-- Align text contents: middle -->
+            <!-- 3/4 of the parent container -->
+            <section class="main">
+                <h2>CSS Grid Layout</h2>
+    
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Elementum eu facilisis sed odio. Arcu felis bibendum ut tristique et egestas quis
+                    ipsum suspendisse. Eget arcu dictum varius duis at consectetur lorem. Porttitor leo a diam sollicitudin
+                    tempor id eu nisl. Porttitor lacus luctus accumsan tortor posuere ac. Et odio pellentesque diam
+                    volutpat commodo sed egestas egestas fringilla. Lacinia at quis risus sed. Sapien et ligula ullamcorper
+                    malesuada proin libero nunc consequat interdum. Nibh venenatis cras sed felis eget velit aliquet
+                    sagittis. Sit amet porttitor eget dolor morbi non arcu risus. Tempor orci dapibus ultrices in iaculis
+                    nunc sed. Et netus et malesuada fames. Elit sed vulputate mi sit amet mauris commodo quis. Sapien
+                    faucibus et molestie ac. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Aenean euismod
+                    elementum nisi quis.
+                </p>
+    
+                <p>
+                    Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Vitae aliquet nec ullamcorper sit amet
+                    risus nullam. Tortor condimentum lacinia quis vel. Quam lacus suspendisse faucibus interdum posuere
+                    lorem ipsum dolor. Sed enim ut sem viverra aliquet eget sit amet. Quis viverra nibh cras pulvinar
+                    mattis nunc. Enim eu turpis egestas pretium aenean. Cursus euismod quis viverra nibh cras. Etiam tempor
+                    orci eu lobortis. Aliquam etiam erat velit scelerisque. In nulla posuere sollicitudin aliquam ultrices
+                    sagittis. Eu lobortis elementum nibh tellus molestie nunc. Viverra orci sagittis eu volutpat odio.
+                    Pharetra sit amet aliquam id diam maecenas.
+                </p>
+    
+                <img src="https://unsplash.it/500/550?image=1062" alt="picture related to the content of the article">
+            </section>
+    
+            <!-- SIDEBAR right -->
+            <!-- 1/4 of the parent container -->
+            <aside class="sidebar">
+                <h3>Sidebar</h3>
+            </aside>
+        </div>
+
+        <!-- FOOTER -->
+        <!-- centered -->
+        <footer>
+            <h3>Footer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
